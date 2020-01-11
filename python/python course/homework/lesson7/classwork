@@ -1,0 +1,5 @@
+def my_generator(n):
+    while n<10:
+        yield n
+        n +=1
+        

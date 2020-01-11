@@ -1,0 +1,9 @@
+<p>Edit Job #{{job_post.id}}</p>
+<form method='post'>
+{% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='Edit'>
+</form>
+
+
+<a href='{% url 'job_recent_posts' %}'>All Jobs</a>

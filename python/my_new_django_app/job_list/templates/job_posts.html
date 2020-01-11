@@ -1,0 +1,11 @@
+{% if job_recent_blog_posts %}
+    <ul>
+        {% for job_post in job_recent_blog_posts %}
+            <a href={% url 'job_blog_post' job_post.id %}>
+                <li>{{ job_post.title }}</li>
+            </a>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> There are now blog posts yet</p>
+{% endif %}

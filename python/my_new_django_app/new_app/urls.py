@@ -1,6 +1,7 @@
 from django.urls import path
 from new_app import views
 
+
 urlpatterns = [
     path('', views.my_first_view),
     path('second/', views.second_view),
@@ -16,8 +17,9 @@ urlpatterns = [
     path('recent-posts/', views.recent_blog_posts, name="recent_posts"),
     path('blog-post/<int:blog_post_id>', views.blog_post_view, name='blog_post'),
     path('add-blog-post/', views.add_blog_post),
-    path('edit-blog-post/<int:blog_post_id>/', views.edit_blog_post, name='edit_blog_post')
+    path('edit-blog-post/<int:blog_post_id>/', views.edit_blog_post, name='edit_blog_post'),
     #path('job-recent-posts/', views.job_recent_blog_posts)
+    
 ]
 
 #, name="job_recent_posts")
